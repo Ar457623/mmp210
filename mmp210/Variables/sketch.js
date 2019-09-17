@@ -1,3 +1,13 @@
+/*
+ self portriat with veriables
+ by Alex
+ 9/17/2019
+*/
+
+var faceSize = 300;
+var x= 300;
+var y= 200;
+
 function setup() {
     createCanvas(600, 400);
 }
@@ -7,7 +17,7 @@ function draw() {
     
     fill("Bisque")
     noStroke();
-	ellipse(300, 200, 300, 400); //face 
+	ellipse(x, y,faceSize, faceSize/2); //face 
     
    
     fill("White")
