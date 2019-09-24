@@ -1,4 +1,5 @@
 /*
+ /*
  self portriat with veriables
  by Alex
  9/17/2019
@@ -13,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-    background("DarkSlateGrey ");
+    background("green ");
     
     fill("Bisque")
     noStroke();
@@ -31,34 +32,19 @@ function draw() {
     ellipse(198, 180, 60)
     
 
-    arc(300, 300, 145, 100, 0, PI); //mouth
+    arc(x,220, 145, 100, 0, PI); //mouth
     fill("BlanchedAlmond ")
     strokeWeight(10);
-    arc(300, 210,  70, 100, 0, PI); //nose
+    arc(x, y,  70, 100, 0, PI); //nose
     
     fill("	#3c6090")
-    arc(300, 100, 300, 100, 0, PI); //hat 
-    ellipse(300, 50, 250, 150);//hat
+    arc(x, x, x, 100, 0, PI); //hat 
+    ellipse(x, 50, 250, 150);//hat
     ellipse(240, 50, 250, 150);//hat
     ellipse(360, 50, 250, 150);//hat
     
     fill("#987676")
     rect(124, 30, 355, 55, 20);
     
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+    
