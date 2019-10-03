@@ -11,18 +11,32 @@ var y= 200;
 
 function setup() {
     createCanvas(600, 400);
+    
+    
+    
+  
 }
 
 function draw() {
-    background("green ");
+   
     
+       	background(300); //
+    	fill("green");
+	ellipse(frameCount, 200, 100);
+    
+    
+    background("white");
+
     fill("Bisque")
     noStroke();
 	ellipse(x, y,faceSize, faceSize/2); //face 
     
+    
+    
    
     fill("White")
-    ellipse(400, 180, 98); //right eye
+     ellipse(400, 180, 98)
+    ellipse(mouseX,mouseY,400, 180, 98); //right eye
     fill("Black")
     ellipse(400, 180, 60) //right eye 
     
@@ -46,5 +60,8 @@ function draw() {
     fill("#987676")
     rect(124, 30, 355, 55, 20);
     
+    
+    
 }
     
+
