@@ -4,22 +4,20 @@
 */
 
 var dog;
+var cat;
+
 
  function preload(){
      dog= loadImage( "dog1.jpeg");
-     
+     cat= loadImage("cat1.jpeg");
      
  }
-
-
-
-
 
 
 function setup() { 
  createCanvas (640,300);
     background("black");
-    
+   
    
     
 }
@@ -28,15 +26,17 @@ function setup() {
 
   function draw() { 
      
-      fill ("White");
-      textSize(30);
-      text ("The Face You Make When You", 120,220);
-      text ("Have 5 Midterms This Week",  140 ,270);
-      textFont( );
+    
+      image (dog, 0,0 );
+      image (cat, 360,0);
+      
+      
+        fill ("white");
+      textSize(40);
+      text ("I'm a dog crying", 20,240);
+      text ("I'm a cat dont click on me",  40 ,260);
+     
   
-      
-      image (dog, 200, 0 );
-      
       
       
       
