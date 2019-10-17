@@ -27,16 +27,23 @@ function setup() {
   function draw() { 
      
     
-      image (dog, 0,0 );
-      image (cat, 360,0);
+      image (dog, width/2, 0, width/2, height );
+      image (cat, width/2, 0, width/2, height);
       
       
         fill ("white");
-      textSize(40);
-      text ("I'm a dog crying", 20,240);
-      text ("I'm a cat dont click on me",  40 ,260);
+      textSize(20);
+      text ("WHY CAN'T I STOP CRYING", 20,230);
+      
+      textSize(20);
+      text ("IS THAT A DOG, CRYING", 360, 230);
+      text("LOL", 480, 250);
      
-  
+      
+      strokeWeight(2);
+	stroke("white");
+	line(width/2, 0, width/2, height);
+	
       
       
       
