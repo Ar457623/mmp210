@@ -53,5 +53,6 @@ function setup() {
       text( "PRESS TO CHANGE", 250, 30);
       text(" BACKGROUND COLOR", 230,50)
       
+      // text that indicates to press the canvas
       
   }
