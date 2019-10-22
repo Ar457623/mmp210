@@ -26,25 +26,32 @@ function setup() {
 
   function draw() { 
      
-    
-      image (dog, width/600, 0, width/2, height );
-      image (cat, width/2, 0, width/2, height);
+    if(mouseIsPressed){
+        background('#89D197');
+    }else{
+        background('#6CBFE0');
+    }      
+      
+      image (dog, width/600, 0, width/2, 200 );
+      image (cat, width/2, 0, width/2, 200);
       
       
         fill ("white");
       textSize(20);
-      text ("WHY CAN'T I STOP CRYING", 20,230);
+      text ("WHY CAN'T I STOP CRYING", 20, 250);
       
       textSize(20);
-      text ("IS THAT A DOG, CRYING", 360, 230);
-      text("LOL", 480, 250);
+      text ("IS THAT A DOG, CRYING", 360, 250);
+      text("LOL", 480, 270);
      
       
       strokeWeight(2);
 	stroke("white");
 	line(width/2, 0, width/2, height);
 	
-      
+      fill('white');
+      text( "PRESS TO CHANGE", 250, 30);
+      text(" BACKGROUND COLOR", 230,50)
       
       
   }
