@@ -27,7 +27,7 @@ function setup() {
   function draw() { 
      
     
-      image (dog, width/2, 0, width/2, height );
+      image (dog, width/600, 0, width/2, height );
       image (cat, width/2, 0, width/2, height);
       
       
