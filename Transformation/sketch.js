@@ -3,12 +3,11 @@
 
 */
 
-var x= 100;
-var y=100;
-var speed= 1;
+
 var cat;
 var dog;
 var r, g, b;
+var catScale= 1;
 
 function preload(){
      dog= loadImage( "dog1.jpeg");
@@ -19,9 +18,6 @@ function preload(){
 
 function setup() { 
  createCanvas (640,700);
-   	r = random(0,255);
-	g = random(0,255);
-	b = random(0,255);
    
    
    
@@ -33,39 +29,33 @@ function setup() {
   function draw() {
        background("#9A6265 ");
       
-    
-        if (frameCount % 30 === 0) {
-		r = random(0,300);
-		g = random(0,100);
-		b = random(0,250);
-	}
-	fill(r, g, b);
-      text ("WHY CAN'T I", 200,130);
-      text("STOP CRYING",190,250)
-       
-      
-      textSize(50);
-      text ("IS THAT A DOG, CRYING", 20, 650);
-      text("LOL", 300, 700);
-     
-      
-      
-      
-      image(cat, x, height/2, width, height/2)
-      
-      
-     x += speed;
-	if (x > width || x < 0) {
-		speed *=-1;
-        
-	}
       
    
-      image(dog, x, height/230, width, height/2);
-       x += speed;
-	if (x > width || x < 0) {
-		speed *= 1;
+      
+        if (frameCount % 30 === 0) {
+		r = random(0,345);
+		g = random(0,255);
+		b = random(0,255);
 	}
+    
+        
+	   
+    
+  
+      
+      
+      
+ 
+        
+     
+    
+   
+      image(cat, 0, height/2, width, height/2);
+    
+    
+      image(dog, 0, height/230, width, height/2);
+      
+     
         
         
         
@@ -78,25 +68,21 @@ function setup() {
       
       
       
-     
-        if (frameCount % 30 === 0) {
-		r = random(0,255);
-		g = random(0,255);
-		b = random(0,255);
-	}
+    
 	fill(r, g, b);
+      translate(0, 0);
+	var r = frameCount / 2000 * PI;
+	shearX(r);
       text ("WHY CAN'T I", 200,130);
       text("STOP CRYING",190,250)
        
       
       textSize(50);
+    
       text ("IS THAT A DOG, CRYING", 20, 650);
       text("LOL", 300, 700);
       
-      
-      
-      
-      
-      
+  
+     
       
   }
