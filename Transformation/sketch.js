@@ -7,7 +7,7 @@
 var cat;
 var dog;
 var r, g, b;
-var catScale= 1;
+
 
 function preload(){
      dog= loadImage( "dog1.jpeg");
@@ -60,7 +60,7 @@ function setup() {
         
         
       	strokeWeight(1);
-	stroke("white");
+	stroke("BLACK");
 		line(0, height/2, width, height/2);
       
       
@@ -71,16 +71,17 @@ function setup() {
     
 	fill(r, g, b);
       translate(0, 0);
-	var r = frameCount / 2000 * PI;
+	var r = frameCount / 500 * PI;
 	shearX(r);
-      text ("WHY CAN'T I", 200,130);
-      text("STOP CRYING",190,250)
+      text ("I HATE CATS", 200,130);
+     
        
       
-      textSize(50);
+      textSize(70);
     
-      text ("IS THAT A DOG, CRYING", 20, 650);
-      text("LOL", 300, 700);
+      text ("LMAOOO", 20, 650);
+     text ("LMAOOO", 20, 550);
+    
       
   
      
