@@ -8,7 +8,7 @@
 */
 
 var slideNumber = 0;
-var totalSlides = 3;
+var totalSlides = 4;
 
 var nextBtnX = 700;
 var nextBtnY = 500;
@@ -57,10 +57,32 @@ function draw() {
         text("1 Pushbutton Swith",400,500);
     } else if (slideNumber == 2) {
         
-      
+       fill("white");
+        textSize(50);
+        textAlign(CENTER, CENTER);
+        text("MISSION", 400, 100);
+    
+    
+    } else if (slideNumber == 3) {
+        
+        fill("white");
+        textSize(50);
+        textAlign(CENTER, CENTER);
+        text("IMPACT ON SKETCH", 400, 100);
+        
+        
+        
+    
+    } else if (slideNumber == 4) {
+        
+        
+         fill("white");
+        textSize(50);
+        textAlign(CENTER, CENTER);
+        text("HOW SENSOR WILL WORK", 400, 100);
+         
     }
-    
-    
+
     /* drawing buttons */
     
     // next btn
