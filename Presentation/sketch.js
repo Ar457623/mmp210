@@ -61,6 +61,12 @@ function draw() {
         textSize(50);
         textAlign(CENTER, CENTER);
         text("MISSION", 400, 100);
+        text("Reflex Game", 400, 200);
+        textSize(35);
+        text("You will be able to press the button", 400 ,250);
+        text("and the p5 sketch will determine how", 400, 300);
+        text("long it took you to press the button to turn",400, 350);
+        text("the led light off.", 400, 400);
     
     
     } else if (slideNumber == 3) {
