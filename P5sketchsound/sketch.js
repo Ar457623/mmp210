@@ -1,15 +1,14 @@
 // final project game reflex 
 var serial;
-var portName = "COM4";
+var portName = "COM5";
 var sensorValue;
 var Hit;
  var r, g, b ;
-function preload(){
-    Hit = loadSound('Hit_hurt 1')
-}
+
  
 function setup() {
     createCanvas(600, 400);
+    
     
     	serial = new p5.SerialPort();
 	serial.on('connected', serverConnected);
@@ -46,7 +45,9 @@ function serialEvent() {
 	sensorValue = currentString; // save it for the draw method
 }
 function draw() {
-   background("#004d1a");
+   background("#008B8B");
+    
+    
     
     fill(255);
      textSize(40);
@@ -55,7 +56,6 @@ function draw() {
     
     
 	fill(r, g, b);
-	ellipse(width/2, height/2, 200, 200);
 }
 function mousePressed() {
     var d = dist(mouseX, mouseY, width/2, height/2);
@@ -63,7 +63,7 @@ function mousePressed() {
 		r = random(0, 255);
 		g = random(0, 255);
 		b = random(0, 255);
-		Hit.play();
+		
 	}
  
     

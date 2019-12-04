@@ -20,13 +20,16 @@ var prevBtnW = 100;
 var prevBtnH = 50;
 
 
+
 function setup() {
     createCanvas(800, 600);
+
 }
 
 function draw() {
     background("#004d1a");
  
+    
     if (slideNumber == 0) {
         // content for slide number 0
         fill(255);
@@ -75,7 +78,14 @@ function draw() {
         textSize(50);
         textAlign(CENTER, CENTER);
         text("IMPACT ON SKETCH", 400, 100);
-        
+        textSize(30);
+        text("what will occur to the sketch is", 400,150);
+        text("the data from the arduino will be presented into",400,200);
+        text("the sketch and show you the result of you're speed.",400, 250);
+        text("The game will show how long it took", 400,300);
+        text("for you to turn of the LED light off.", 400, 350);
+        text("And show the background changing colors", 400, 400);
+       
         
         
     
@@ -85,8 +95,14 @@ function draw() {
          fill("white");
         textSize(50);
         textAlign(CENTER, CENTER);
-        text("HOW SENSOR WILL WORK", 400, 100);
-         
+        text("WORK IN PROGRESS", 400, 100);
+    
+        
+        
+      
+        
+
+        
     }
 
     /* drawing buttons */
