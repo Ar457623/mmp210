@@ -2,13 +2,16 @@
 var serial;
 var portName = "COM5";
 var sensorValue;
-var Hit;
+var serialAvailable;
  var r, g, b ;
 
  
 function setup() {
     createCanvas(600, 400);
-    
+    r = random(0,255);
+	g = random(0,255);
+	b = random(0,255);
+   
     
     	serial = new p5.SerialPort();
 	serial.on('connected', serverConnected);
@@ -45,26 +48,26 @@ function serialEvent() {
 	sensorValue = currentString; // save it for the draw method
 }
 function draw() {
-   background("#008B8B");
+   background(r,g,b);
+     if (frameCount % 100 === 0) {
+		r = random(0,255);
+		g = random(0,255);
+		b = random(0,255);
+	}
     
     
-    
-    fill(255);
+    fill("black");
      textSize(40);
      textAlign(CENTER, CENTER);
     text(sensorValue, width/2, height/2);
     
     
-	fill(r, g, b);
+    
+   
+    
+	
 }
-function mousePressed() {
-    var d = dist(mouseX, mouseY, width/2, height/2);
-	if (d < 100) {
-		r = random(0, 255);
-		g = random(0, 255);
-		b = random(0, 255);
-		
-	}
+
  
     
     
@@ -77,4 +80,3 @@ function mousePressed() {
     
     
     
-}
